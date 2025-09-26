@@ -1,0 +1,62 @@
+# --> check the technical writing for various characteristics
+- writing/reflection.md:
+  - description: Ensure that reflection.md file exists in the writing/ directory
+    check: ConfirmFileExists
+  # - description: Write a minimum number of meaningful words (adding around 100 words in total) in the reflection
+  #   check: CountFileWords
+  #   options:
+  #     count: 500
+  #     exact: false
+  - description: Complete all TODOs, remove the TODO markers in writing/reflection.md
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in writing/reflection.md
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+
+# --> check the code for various characteristics
+- ./src/main.py:
+  - description: Ensure that .src/main.py file exists
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in the File ./src/main.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the File ./src/main.py
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+
+# --> check the code for various characteristics
+- ./src/math_approximator.py:
+  - description: Ensure that .src/math_approximator.py file exists
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in the File ./src/math_approximator.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the File ./src/math_approximator.py
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+
+
+# count number of commits in the GitHub repository
+- description: Have at least a specific minimum number of commits (5) in repository
+  check: CountCommits
+  options:
+    count: 5
