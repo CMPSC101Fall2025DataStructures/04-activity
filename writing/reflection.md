@@ -1,6 +1,6 @@
 # CS101 Fall 2025 - Activity 04 Reflection
 
-**Name:** Add YHour Nme Here  
+**Name:** Add Your Name Here  
 **Date:** Add Date Here
 
 ## Instructions
